@@ -2,3 +2,17 @@ name: TerrainClaim
 version: '${project.version}'
 main: me.yumei.terrainclaim.TerrainClaim
 api-version: 1.18
+commands:
+    claim:
+        usage: "Usage: /claim"
+        description: Opens terrain claiming gui.
+        permission: terrainclaim.claim
+permissions:
+    terrainclaim.claim:
+        description: Allows opening terrain claiming gui.
+        default: true
+    terrainclaim.*:
+        description: Wildcard permission
+        default: op
+        children:
+            terrainclaim.claim: true
