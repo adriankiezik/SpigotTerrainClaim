@@ -1,0 +1,4 @@
+name: TerrainClaim
+version: '${project.version}'
+main: me.yumei.terrainclaim.TerrainClaim
+api-version: 1.18
